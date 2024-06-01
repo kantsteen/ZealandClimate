@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace ZealandClimate
 {
-    internal class Lokale
+    internal class Lokale : IDBase
     {
-        private static int nextId = 1;
-        private int Id { get; set; }
+        //private static int nextId = 1;
+        //private int Id { get; set; }
         private string LokaleNummer { get; set; }
         private int MaxAntalPersoner { get; set; }
 
 
-        public Lokale(string lokaleNummer, int maxAntalPersoner)
+        public Lokale(string lokaleNummer, int maxAntalPersoner) : base()
         {
-            Id = nextId++;
+            //Id = nextId++;
 
             LokaleNummer = lokaleNummer;
 

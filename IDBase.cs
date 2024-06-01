@@ -6,11 +6,18 @@ using System.Threading.Tasks;
 
 namespace ZealandClimate
 {
-    internal class IDBase
+    public class IDBase
     {
-        private static int nextId = 1;
-        private int Id { get; set; }
+        private int id;
+        internal static int nextId = 1;
 
+        internal IDBase() 
+        {
+            nextId++;
+            id = nextId;
+        }
+
+        internal int Id { get; set; }
 
     }
 }

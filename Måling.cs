@@ -6,23 +6,15 @@ using System.Threading.Tasks;
 
 namespace ZealandClimate
 {
-    internal class Måling
+    internal class Måling : IDBase
     {
-        private static int nextId = 1;
-        private int Id { get; set; }
+        //private static int nextId = 1;
 
-        private DateTime DateTime { get; set; }
-
-        private double Temp { get; set; }
-
-        private int Co2 { get; set; }
-
-        private int AntalPersoner {  get; set; }
 
         private readonly Lokale Lokale;
 
 
-        public Måling(DateTime dateTime, double temp, int co2, int antalPersoner, Lokale lokale)
+        public Måling(DateTime dateTime, double temp, int co2, int antalPersoner, Lokale lokale) : base()
         {
             Id = nextId++;
             DateTime = dateTime;
@@ -33,24 +25,25 @@ namespace ZealandClimate
         }
 
 
-            public override string ToString()
+
+        //private int Id { get; set; }
+
+        private DateTime DateTime { get; set; }
+
+        private double Temp { get; set; }
+
+        private int Co2 { get; set; }
+
+        private int AntalPersoner { get; set; }
+
+
+
+        public override string ToString()
         {
             return $"Lokale ID: {Id}, dato og tid: {DateTime}, temperatur: {Temp}, CO2: {Co2} ppm, personer: {AntalPersoner}";
 
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
+
