@@ -11,6 +11,8 @@
 
             Måling måling1 = new Måling(DateTime.Now, 22.5, 445, 30, lokale1);
 
+            MålingRegister register = new MålingRegister();
+
             Console.WriteLine(lokale1);
             Console.WriteLine(måling1 + Environment.NewLine);
 
