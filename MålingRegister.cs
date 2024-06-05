@@ -16,7 +16,10 @@ namespace ZealandClimate
             målinger = new List<Måling>();
         }
 
-
+        public void OpretMåling(Måling måling)
+        {
+            målinger.Add(måling);
+        }
 
 
 

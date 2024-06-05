@@ -16,7 +16,7 @@
             Console.WriteLine(lokale1);
             Console.WriteLine(måling1 + Environment.NewLine);
 
-
+            Console.WriteLine(register);
 
         }
     }
