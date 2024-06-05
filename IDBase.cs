@@ -9,7 +9,7 @@ namespace ZealandClimate
     public class IDBase
     {
         private int id;
-        internal static int nextId = 1;
+        internal static int nextId = 0;
 
         internal IDBase() 
         {

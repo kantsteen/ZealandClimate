@@ -16,7 +16,7 @@ namespace ZealandClimate
 
         public Lokale(string lokaleNummer, int maxAntalPersoner) : base()
         {
-            //Id = nextId++;
+            Id = nextId;
 
             LokaleNummer = lokaleNummer;
 
