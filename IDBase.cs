@@ -13,8 +13,7 @@ namespace ZealandClimate
 
         internal IDBase() 
         {
-            nextId++;
-            id = nextId;
+            Id = nextId++;
         }
 
         internal int Id { get; set; }

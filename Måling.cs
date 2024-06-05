@@ -16,7 +16,7 @@ namespace ZealandClimate
 
         public Måling(DateTime dateTime, double temp, int co2, int antalPersoner, Lokale lokale) : base()
         {
-            Id = nextId++;
+            //Id = nextId++;
             DateTime = dateTime;
             Temp = temp;
             Co2 = co2;
@@ -40,7 +40,7 @@ namespace ZealandClimate
 
         public override string ToString()
         {
-            return $"Lokale ID: {Id}, dato og tid: {DateTime}, temperatur: {Temp}, CO2: {Co2} ppm, personer: {AntalPersoner}";
+            return $"Måling ID: {Id}, dato og tid: {DateTime}, temperatur: {Temp}, CO2: {Co2} ppm, personer: {AntalPersoner} lokale: {Lokale.LokaleNummer}";
 
         }
 
