@@ -10,7 +10,7 @@ namespace ZealandClimate
     {
         //private static int nextId = 1;
         //private int Id { get; set; }
-        private string LokaleNummer { get; set; }
+        public string LokaleNummer { get; set; }
         private int MaxAntalPersoner { get; set; }
 
 
@@ -19,7 +19,6 @@ namespace ZealandClimate
             Id = nextId;
 
             LokaleNummer = lokaleNummer;
-
             MaxAntalPersoner = maxAntalPersoner;
 
         }

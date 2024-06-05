@@ -40,7 +40,7 @@ namespace ZealandClimate
 
         public override string ToString()
         {
-            return $"Måling Id: {Id}, dato og tid: {DateTime}, temperatur: {Temp}, CO2: {Co2} ppm, personer: {AntalPersoner}";
+            return $"Lokale ID: {Id}, dato og tid: {DateTime}, temperatur: {Temp}, CO2: {Co2} ppm, personer: {AntalPersoner}";
 
         }
 
