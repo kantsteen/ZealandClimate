@@ -70,18 +70,24 @@ namespace ZealandClimate
         }
 
 
+        public Måling AlleTempUnderOver(int min, int max)
+        {
+            foreach(Måling m in målinger)
+            {
+                if (m.Temp < min || m.Temp > max)
+                {
+                    Console.WriteLine(m);
+                }
+            }
+            return null;
+        }
+            
 
 
 
 
 
-
-
-
-
-
-
-
+        
 
 
 

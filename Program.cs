@@ -12,10 +12,11 @@
 
             Måling måling1 = new Måling(DateTime.Now, 22.5, 445, 30, lokale1);
 
-            Console.WriteLine(lokale1);
 
             Console.WriteLine(lokale1);
             Console.WriteLine(måling1 + Environment.NewLine);
+
+            MålingRegister register = new MålingRegister();
 
             register.OpretMåling(DateTime.Now, 22.5, 450, 28, lokale1);
             register.OpretMåling(DateTime.Now, 24, 400, 24, lokale1);
@@ -37,6 +38,18 @@
             Console.WriteLine();
 
             Console.WriteLine("Antal ulovlige CO2 målinger: " + register.AntalUlovligeCO2Målinger());
+
+
+            register.OpretMåling(DateTime.Now, 19, 450, 23, lokale2);
+            register.OpretMåling(DateTime.Now, 31, 900, 25, lokale2);
+
+
+
+            register.AlleTempUnderOver(20, 30);
+
+
+
+
 
 
         }

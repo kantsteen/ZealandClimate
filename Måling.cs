@@ -30,7 +30,7 @@ namespace ZealandClimate
 
         private DateTime DateTime { get; set; }
 
-        private double Temp { get; set; }
+        public double Temp { get; set; }
 
         public int Co2 { get; set; }
 
